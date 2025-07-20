@@ -174,4 +174,86 @@ response: {
   "table": "heading",
   "key": "introduction"
 }
+prompt: Please use the Knowledge Classification doc as a reference. I want you to please extract exhaustively the information in chunks from the text. Classify each chunk according to the categories in the doc.
+response: [cite_start]Here is the information from your text, chunked and classified according to the categories in the "Knowledge Classification" document[cite: 891, 893, 949, 969, 979, 990, 1001, 1010, 1019, 1028, 1037, 1046, 1055, 1064, 1073]:
 
+* **Chunk 1: "Every programmer has a story about how they learned to write their first program."**
+    * [cite_start]**Classification:** Narrative Knowledge [cite: 1064]
+    * **Explanation:** This statement sets up a personal anecdote or story about learning to program. [cite_start]Narrative knowledge is structured as stories, episodes, and temporal sequences[cite: 1064].
+
+* **Chunk 2: "I started learning as a child when my father was working for Digital Equipment Corporation, one of the pioneering companies of the modern computing era."**
+    * [cite_start]**Classification:** Experiential / Episodic Knowledge [cite: 891]
+    * [cite_start]**Explanation:** This describes a specific personal event and experience from the past[cite: 891].
+
+* **Chunk 3: "I wrote my first program on a kit computer my dad had assembled in our basement."**
+    * [cite_start]**Classification:** Experiential / Episodic Knowledge [cite: 891]
+    * [cite_start]**Explanation:** Similar to the previous chunk, this details another personal event and experience related to the individual's learning journey[cite: 891].
+
+* **Chunk 4: "The computer consisted of nothing more than a bare motherboard connected to a keyboard without a case, and it had a bare cathode ray tube for a monitor."**
+    * [cite_start]**Classification:** Conceptual Knowledge [cite: 969]
+    * **Explanation:** This chunk describes the components and structure of the computer, detailing "what" it consisted of. [cite_start]Conceptual knowledge includes facts, explanations, theories, principles, and relationships between concepts[cite: 969].
+
+* **Chunk 5: "My initial program was a simple number guessing game, which looked something like this: I'm thinking of a number! Try to guess the number I'm thinking of: 25 Too low! Guess again: 50 Too high! Guess again: 42 That's it! Would you like to play again? (yes/no) no Thanks for playing!"**
+    * [cite_start]**Classification:** Procedural Knowledge [cite: 949]
+    * **Explanation:** This section explains how the number guessing game works by showing the step-by-step interaction and flow of the program. [cite_start]Procedural knowledge tells you how something should be executed[cite: 949].
+prompt: Now switch to this text:
+I’ll always remember how satisfied I felt watching my family play a game
+that I created and that worked as I intended it to.
+response: Here is the classification for the new text you provided:
+
+* **Text:** "I’ll always remember how satisfied I felt watching my family play a game that I created and that worked as I intended it to."
+    * **Classification:** Experiential / Episodic Knowledge
+    * **Explanation:** This describes a personal memory and the emotional satisfaction derived from a specific event, which falls under the category of memories of personal events and stories.
+prompt: Now switch to this text:
+That early experience had a lasting impact. There is real satisfaction
+in building something with a purpose, something that solves a problem.
+The software I write now meets a more significant need than my childhood
+efforts, but the sense of satisfaction I get from creating a program that works
+is still largely the same. 
+response: Here is the classification for the new text you provided:
+
+* **Text:** "That early experience had a lasting impact. There is real satisfaction in building something with a purpose, something that solves a problem. The software I write now meets a more significant need than my childhood efforts, but the sense of satisfaction I get from creating a program that works is still largely the same."
+    * **Classification:** Emotional/Affective Knowledge
+    * **Explanation:** This passage primarily focuses on the feeling of satisfaction and its persistence over time, directly involving emotions and attitudes related to the act of creating.
+prompt: Now switch to this text:
+The goal of this book is to bring you up to speed with Python as quickly as
+possible so you can build programs that work—games, data visualizations,
+and web applications—while developing a foundation in programming that
+will serve you well for the rest of your life. Python Crash Course is written for
+people of any age who have never programmed in Python before or have
+never programmed at all. If you want to learn the basics of programming
+quickly so you can focus on interesting projects, and you like to test your
+understanding of new concepts by solving meaningful problems, this book
+is for you. Python Crash Course is also perfect for middle school and high
+school teachers who want to offer their students a project-based introduc-
+tion to programming.
+prompt: Now start following: Script For the Extraction of Knowledge.
+response: Understood. I will now follow the "Script For the Extraction of Knowledge." Please provide the text you would like me to analyze.
+prompt: Use this text:
+I’ll always remember how satisfied I felt watching my family play a game
+that I created and that worked as I intended it to.
+response: [cite_start]Here is the analysis of the text you provided, following the "Script For the Extraction of Knowledge"[cite: 1]:
+
+**Text:** "I’ll always remember how satisfied I felt watching my family play a game that I created and that worked as I intended it to."
+
+**What the writer is trying to tell me:**
+The writer is sharing a personal memory of profound satisfaction and pride. This feeling stemmed from witnessing their family enjoy a game that the writer had personally created and which functioned exactly as envisioned. It emphasizes the emotional fulfillment gained from creative output that is both successful and appreciated by others.
+
+**What the author is trying to teach me:**
+The author is implicitly teaching that significant personal and emotional reward can be found in the act of creation, especially when that creation is enjoyed by others and performs as intended. It highlights the intrinsic satisfaction that comes from bringing an idea to life and sharing it successfully.
+
+**Extracted and Classified Information:**
+
+* **Chunk:** "I’ll always remember how satisfied I felt watching my family play a game that I created and that worked as I intended it to."
+    * [cite_start]**Classification 1:** Experiential / Episodic Knowledge [cite: 2]
+        * [cite_start]**Explanation:** This chunk describes a specific personal memory ("I’ll always remember") and the event associated with it, which aligns with the definition of memory of personal events and stories[cite: 2].
+    * [cite_start]**Classification 2:** Emotional/Affective Knowledge [cite: 2]
+        * [cite_start]**Explanation:** The primary focus of the chunk is the emotion of "satisfaction" ("how satisfied I felt"), directly relating to knowledge involving emotions and feelings[cite: 2].
+prompt: I've updated the script. Start following the updated script.
+response: Understood. [cite_start]I have reviewed the updated "Script For the Extraction of Knowledge" and will now follow these revised instructions[cite: 896, 897, 898, 899, 900, 901, 902, 903, 904]. Please provide the text you would like me to analyze.
+prompt: Use this text:
+I’ll always remember how satisfied I felt watching my family play a game
+that I created and that worked as I intended it to.
+prompt: Can you shorten this concept, ideally to one word:
+Such a simple program serves a very real purpose.
+response: Utility
